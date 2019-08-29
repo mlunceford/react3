@@ -1,24 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Grandpa from './Component/Grandpa'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="home">Home</header>
+      <div className='black'>
+        <div className='wrap'>
+          <div className='dataBox'> 
+          
+            <div className='buttons'>
+              <button> {'< Previous'} </button>
+              <button>{'Next >'}</button>
+            </div>  
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

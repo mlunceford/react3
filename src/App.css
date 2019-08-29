@@ -31,3 +31,62 @@
     transform: rotate(360deg);
   }
 }
+
+.home {
+  height: 100px;
+  width: auto;
+  background: #61dafb;
+  color:  black;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+
+
+}
+.black{
+  background: rgb(53, 49, 49);
+  height: 90vh;
+  width: auto;
+  
+  
+
+  
+}
+.wrap{
+  background:  rgb(53, 49, 49);
+  height: 80%;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.dataBox {
+  background: ivory ;
+  height: 80%;
+  width: 80%;
+  position: bottom;
+  display: flex;  
+  flex-direction: column;
+  justify-content: space-between
+  /* align-items:; */
+  /* justify-content: ; */
+
+}
+.buttons{
+  background: rgb(53, 49, 49);
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+  
+}
+button{
+  background: rgb(53, 49, 49);
+  color: ivory;
+  border: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+
+}
