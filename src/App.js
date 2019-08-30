@@ -1,24 +1,42 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.css';
-import Grandpa from './Component/Grandpa'
+import Display from './Component/Display'
+import Navigation from './Component/Navigation'
+import data from './Component/data'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="home">Home</header>
-      <div className='black'>
-        <div className='wrap'>
-          <div className='dataBox'> 
-          
-            <div className='buttons'>
-              <button> {'< Previous'} </button>
-              <button>{'Next >'}</button>
-            </div>  
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      id: 1
+    }
+    // this.previous = this.previous.bind(this)
+  }
+  previous = () =>{
+    this.setState({ id: this.state.id - 1 })
+  }
+  next = () =>{
+    this.setState({ id: this.state.id + 1 })
+  }
+  render(){
+    return(
+      <div className = "App" >
+        <header className="home">Home</header>
+        <div className='black'>
+          <div className='wrap'>
+            <div className='dataBox'>
+              <Display user={data.find((user, i, arr)=> {
+                return user.id === this.state.id
+              })}/>
+              <Navigation previous={this.previous} next={this.next}/>
+
+            
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  );
+    ); 
+  }
 }
 
 export default App;
