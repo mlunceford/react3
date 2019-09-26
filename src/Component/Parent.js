@@ -11,14 +11,14 @@ export default class Parent extends React.Component {
         }
     }
     previous = () => {
-        if (this.state.index === -1){
-            this.setState({index: this.state.data.length})
+        if (this.state.index === 0){ //you have to say  -1 because of zero index
+            this.setState({index: this.state.data.length -1}) 
         }else {
             this.setState({ index: this.state.index - 1 })
         }
     }
     next = () => {
-        if (this.state.index === this.state.data.length + 1) {
+        if (this.state.index === this.state.data.length -1) {
             this.setState({ index: 0 })
         }else{
             this.setState({ index: this.state.index + 1 })
@@ -30,8 +30,6 @@ export default class Parent extends React.Component {
 
 
     render() {
-        console.log(this.state.data.length +1)
-        console.log(this.state.index)
         return (
             <div className="Parent">
                 <Child
