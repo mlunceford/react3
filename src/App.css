@@ -1,92 +1,89 @@
-.App {
-  text-align: center;
+.App{
+  margin: 0;
+  border: 0;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.home {
+header{
   height: 100px;
   width: auto;
-  background: #61dafb;
-  color:  black;
+  background: #34A5DA;
   display: flex;
   align-items: center;
-  padding-left: 30px;
-
-
+  padding: 0 0 0 20px;
 }
-.black{
-  background: rgb(53, 49, 49);
-  height: 90vh;
+.Parent {
+  height: 620px;
   width: auto;
-  
-  
-
-  
-}
-.wrap{
-  background:  rgb(53, 49, 49);
-  height: 80%;
-  width: auto;
+  background:#222222;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
 }
-.dataBox {
-  background: ivory ;
-  height: 80%;
-  width: 80%;
-  position: bottom;
-  display: flex;  
+.Child {
+  position: fixed;
+  height: 60vh;
+  width: 80vw;
+  background: #EBEBEB;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between
-  /* align-items:; */
-  /* justify-content: ; */
+  justify-content: space-between;
+  align-content: center;
+}
+.numIndex{
+  text-align: right;
+  padding-right: 5px;
+  font-size: 20px;
+  
+  /* background: green; */
+}
+.name{
+  /* background: pink;
+  height: ; */
+  font-size: 30px;
+  padding: 0 0 0 15px;
+  text-decoration: underline;
+  text-decoration-color: #34A5DA;
+  font-weight: bold;
+
 
 }
-.buttons{
-  background: rgb(53, 49, 49);
-  height: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-content: flex-end;
+.info{
+  /* background: yellow; */
+  height: 100px;
+  padding: 0 0 0 15px;
+}
+.favMovie{
+  /* background: lightblue; */
+  padding: 0 0 0 15px;
   
 }
-button{
-  background: rgb(53, 49, 49);
-  color: ivory;
-  border: 0;
+h4{
+  font-weight: bold;
+}
+.nav {
+  height: 30px;
   display: flex;
   justify-content: space-between;
-  align-content: flex-end;
+  align-items: center;
+  background: #222222 ;
+  color: white;
+}
+.midNav{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+.but{
+  border-radius: 100px;
+  color: white;
+  background: #34A5DA;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.point{
+  cursor: pointer;
+}
+label{
+  font-weight: bold;
 
 }
