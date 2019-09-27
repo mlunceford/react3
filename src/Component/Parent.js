@@ -24,10 +24,6 @@ export default class Parent extends React.Component {
             this.setState({ index: this.state.index + 1 })
         }
     }
-    // numIndexChange = () => {
-
-    // }
-
 
     render() {
         return (
